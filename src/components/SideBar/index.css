@@ -1,0 +1,18 @@
+.sidebar_side {
+  padding: 10px 10px;
+}
+.menu {
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-start;
+  border-radius: 40px;
+  padding: 0px 15px;
+  font-family: "Fira Code";
+  font-size: 20px;
+}
+.menu:hover {
+  background-color: #1e6adb;
+  cursor: pointer;
+}
