@@ -14,11 +14,11 @@
   transition: all 0.3s ease;
 }
 .menu:hover {
-  background-color: #1e6adb;
+  background-color: #0066ff;
   cursor: pointer;
 }
 .is_active {
-  background-color: #1e6adb;
+  background-color: #0066ff;
 }
 .is_disabled {
   background-color: #24acf2;

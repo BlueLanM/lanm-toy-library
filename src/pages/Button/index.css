@@ -6,12 +6,12 @@
 }
 .btnBlock {
   display: flex;
-  width: 200px;
-  height: 100px;
+  width: 180px;
+  height: 70px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #24acf2;
-  background-color: #413f3f;
+  border: 1px solid #ffffff;
+  background-color: #505050;
   border-radius: 10px;
   padding: 10px;
   margin: 20px;
