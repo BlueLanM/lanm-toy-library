@@ -5,17 +5,16 @@ import Button_3 from "./Button_3";
 import "./index.css";
 
 function index() {
+  const component = [
+    { model: <Button_1 /> },
+    { model: <Button_2 /> },
+    { model: <Button_3 /> },
+  ];
   return (
     <div className="btnBg">
-      <div className="btnBlock">
-        <Button_1 />
-      </div>
-      <div className="btnBlock">
-        <Button_2 />
-      </div>
-      <div className="btnBlock">
-        <Button_3 />
-      </div>
+      {component.map((item: any) => {
+        return <div className="btnBlock">{item.model}</div>;
+      })}
     </div>
   );
 }
