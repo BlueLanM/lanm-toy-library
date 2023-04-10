@@ -5,8 +5,6 @@ import "./index.css";
 function index(param: any) {
   const [id, setIds] = useState("1");
   const { setType } = param;
-  const [isActive, setActive] = useState(false);
-  const [isDisable, setDisable] = useState(false);
 
   const menu = [
     { label: "Buttons", type: "Button", id: "1" },
