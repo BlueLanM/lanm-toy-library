@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
+import classNames from "classnames";
 import "./index.css";
 
 function index(param: any) {
-  const [id, setIds] = useState();
+  const [id, setIds] = useState("1");
   const { setType } = param;
+  const [isActive, setActive] = useState(false);
+  const [isDisable, setDisable] = useState(false);
 
   const menu = [
     { label: "Buttons", type: "Button", id: "1" },
@@ -13,21 +16,22 @@ function index(param: any) {
     { label: "Loaders", type: "Loader", id: "5" },
     { label: "Inputs", type: "Input", id: "6" },
   ];
-  const handleClick = (e: any) => {
+  const handleClick = (e: any, i: any) => {
     setIds(e.id);
     setType(e.type);
   };
 
   return (
     <div className="sidebar_side">
-      {menu.map((item: any) => {
+      {menu.map((item: any, index: any) => {
         return (
           <div
-            className="menu"
+            className={classNames({
+              menu: true,
+              is_active: id === item.id,
+            })}
             key={item.id}
-            onClick={() => {
-              handleClick(item);
-            }}
+            onClick={() => handleClick(item, index)}
           >
             {item.label}
           </div>

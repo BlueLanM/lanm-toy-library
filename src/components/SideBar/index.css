@@ -5,14 +5,21 @@
   height: 60px;
   display: flex;
   align-items: center;
-
+  margin-bottom: 10px;
   justify-content: flex-start;
   border-radius: 40px;
   padding: 0px 15px;
   font-family: "Fira Code";
   font-size: 20px;
+  transition: all 0.3s ease;
 }
 .menu:hover {
   background-color: #1e6adb;
   cursor: pointer;
+}
+.is_active {
+  background-color: #1e6adb;
+}
+.is_disabled {
+  background-color: #24acf2;
 }

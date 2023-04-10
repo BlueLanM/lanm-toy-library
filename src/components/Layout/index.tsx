@@ -4,7 +4,7 @@ import SideBar from "../SideBar";
 import Content from "../Content";
 
 export default function index() {
-  const [type, setType] = useState();
+  const [type, setType] = useState("Button");
 
   return (
     <div className="layout">
