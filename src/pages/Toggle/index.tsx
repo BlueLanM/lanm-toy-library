@@ -8,14 +8,22 @@ import Toggle_4 from "./Toggle_4";
 function index() {
   const component = [
     { model: <Toggle_1 /> },
-    { model: <Toggle_2 /> },
+    { model: <Toggle_2 />, color: "#fff" },
     { model: <Toggle_3 /> },
     { model: <Toggle_4 /> },
   ];
   return (
     <div className="toggleBg">
-      {component.map((item: any) => {
-        return <div className="toggleBlock">{item.model}</div>;
+      {component.map((item: any, index: any) => {
+        return (
+          <div
+            key={index}
+            className="toggleBlock"
+            style={{ backgroundColor: item.color }}
+          >
+            {item.model}
+          </div>
+        );
       })}
     </div>
   );

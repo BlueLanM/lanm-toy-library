@@ -1,14 +1,13 @@
-.toggleBg {
+.cardBg {
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.toggleBlock {
+.cardBlock {
   display: flex;
-  width: 200px;
-  height: 90px;
-  position: relative;
+  width: 342px;
+  height: 420px;
   justify-content: center;
   align-items: center;
   border: 1px solid #ffffff;

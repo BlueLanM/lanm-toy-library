@@ -20,7 +20,8 @@ function index(props: any) {
   return (
     <div style={{ width: "100%", height: "100%" }}>
       {componentMap.map((item: any) => {
-        if (item.type == type) return <>{item.component}</>;
+        if (item.type == type)
+          return <div key={item.type}>{item.component}</div>;
       })}
     </div>
   );

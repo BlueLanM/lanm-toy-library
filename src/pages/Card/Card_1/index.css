@@ -1,0 +1,42 @@
+.card_1 {
+  width: 210px;
+  height: 254px;
+  border-radius: 4px;
+  background: #212121;
+  display: flex;
+  gap: 5px;
+  padding: 0.4em;
+}
+
+.card_1 div {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.5s;
+  background: #212121;
+  border: 1px solid #ff5a91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_1 div:hover {
+  flex: 4;
+}
+
+.card_1 div span {
+  min-width: 14em;
+  padding: 0.5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+  text-transform: uppercase;
+  color: #ff568e;
+  letter-spacing: 0.1em;
+}
+
+.card_1 div:hover span {
+  transform: rotate(0);
+}
