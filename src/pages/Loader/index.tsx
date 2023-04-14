@@ -9,7 +9,6 @@ function index() {
     { model: <Loader_1 />, color: "#fff" },
     { model: <Loader_2 />, color: "#fff" },
     { model: <Loader_3 /> },
-
     // { model: <Toggle_4 /> },
   ];
   return (
